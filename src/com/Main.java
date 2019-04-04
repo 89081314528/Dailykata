@@ -11,26 +11,20 @@ package com;
 
 public class Main {
     public static void main(String[] args) {
-        String[] weekDay = new String[4];
-        weekDay[0] = "Monday";
-        weekDay[1] = "Thusday";
-        weekDay[2] = "Sutturday";
-        weekDay[3] = "Sunday";
-        printWeekDay(weekDay);
-        printWeekends(weekDay);
-        System.out.println(sum(4,2));
-        System.out.println(product(4,2));
-        System.out.println(applyOperation(4,2,1));
-        System.out.println(applyOperation(4,2,2));
-        System.out.println(applyOperation(4,2,3));
+     String[] weekDay = new String[4];
+     weekDay[0] = "Monday";
+     weekDay[1] = "Tuesday";
+     weekDay[2] = "Suttarday";
+     weekDay[3] = "Sunday";
+     printWeekDay(weekDay);
+     System.out.println(sum(4, 2));
+     System.out.println(product(4, 2));
+     System.out.println(applyOperation(4, 2, 1));
+     System.out.println(applyOperation(4, 2, 2));
+     System.out.println(applyOperation(4, 2, 3));
     }
     public static void printWeekDay(String[] a) {
-        for (int i = 0; i < a.length; i++) {
-            System.out.println(a[i]);
-        }
-    }
-    public static void printWeekends(String[] a) {
-        for (int i = 2; i < a.length; i++) {
+        for (int i = 0; i < a.length; i++){
             System.out.println(a[i]);
         }
     }
@@ -47,7 +41,7 @@ public class Main {
         if (operation == 2) {
             return product(a, b);
         }
-        return stepen(a,b);
+        return stepen(a, b);
     }
     public static int stepen(int a, int b) {
         int chislo = a;
