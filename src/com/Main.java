@@ -12,32 +12,27 @@ package com;
 public class Main {
     public static void main(String[] args) {
         String[] workDay = new String[4];
-        workDay[0] = "Monday";
-        workDay[1] = "Thusday";
-        workDay[2] = "Sutturday";
+        workDay[0] = "M";
+        workDay[1] = "T";
+        workDay[2] = "S";
         workDay[3] = "Sunday";
-        printDays(workDay);
-        System.out.println(sum(4,2));
-        System.out.println(product(4,2));
-        System.out.println(applyOperation(4,2, 1));
-        System.out.println(applyOperation(4,2, 2));
-        System.out.println(applyOperation(4,2, 3));
+        printDay(workDay);
+        System.out.println(applyOperarion(4,2,1));
+        System.out.println(applyOperarion(4,2,2));
+        System.out.println(applyOperarion(4,2,3));
     }
-
-    public static void printDays(String[] a) {
+    public static void printDay(String[] a) {
         for (int i = 0; i < a.length; i++) {
             System.out.println(a[i]);
         }
     }
-
     public static int sum(int a, int b) {
         return a + b;
     }
-
     public static int product(int a, int b) {
         return a * b;
     }
-    public static int applyOperation(int a, int b, int operation) {
+    public static int applyOperarion(int a, int b, int operation) {
         if (operation == 1) {
             return sum(a, b);
         }
