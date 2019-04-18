@@ -17,9 +17,9 @@ public class Main {
        day[2] = "d";
        day[3] = "f";
        printDay(day);
-        System.out.println(applyOperation(4,2,1));
-        System.out.println(applyOperation(4,2,2));
-        System.out.println(applyOperation(4,2,3));
+        System.out.println(appleOperation(4,2,1));
+        System.out.println(appleOperation(4,2,2));
+        System.out.println(appleOperation(4,2,3));
     }
     public static void printDay(String[] a) {
         for (int i = 0; i < a.length; i++) {
@@ -32,7 +32,7 @@ public class Main {
     public static int product(int a, int b) {
         return a * b;
     }
-    public static int applyOperation (int a, int b, int operation) {
+    public static int appleOperation(int a, int b, int operation) {
         if (operation == 1) {
             return sum(a, b);
         }
@@ -42,8 +42,8 @@ public class Main {
         return stepen(a, b);
     }
     public static int stepen(int a, int b) {
+        int chislo = a;
         for (int i = 1; i < b; i++) {
-            int chislo = a;
             a = a * chislo;
         }
         return a;
